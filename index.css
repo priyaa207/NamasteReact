@@ -59,3 +59,27 @@ list-style: none;
 .search {
     padding: 10px
 }
+
+.filter-btn{
+    background-color: #f05454; /* A nice standout color */
+  color: #ffffff; /* Contrasting text color */
+  padding: 10px 20px; /* Adjust for comfortable size */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded edges */
+  font-family: 'Arial', sans-serif; /* Clean font style */
+  font-weight: bold;
+  cursor: pointer; /* Pointer for interactivity */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+.filter-btn:hover {
+    background-color: #d94343; /* Slightly darker shade */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+    transform: translateY(-2px); /* Raise the button */
+  }
+  
+  .filter-btn:active {
+    transform: translateY(0px); /* Reset when clicked */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
+  }
+
