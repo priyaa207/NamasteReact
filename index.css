@@ -61,9 +61,10 @@ list-style: none;
 }
 
 .filter-btn{
-    background-color: #f05454; /* A nice standout color */
+  background-color: #f05454; /* A nice standout color */
   color: #ffffff; /* Contrasting text color */
-  padding: 10px 20px; /* Adjust for comfortable size */
+  padding: 5px 10px; /* Adjust for comfortable size */
+  margin:0px 10px;
   border: none; /* Remove default border */
   border-radius: 25px; /* Rounded edges */
   font-family: 'Arial', sans-serif; /* Clean font style */
@@ -82,4 +83,54 @@ list-style: none;
     transform: translateY(0px); /* Reset when clicked */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
   }
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-cards{
+    background-color:rgb(172, 171, 169);
+    width:200px;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+}
 
+.cancel-filter{
+    background-color:darkgrey;/* A nice standout color */
+    color: #ffffff; /* Contrasting text color */
+    padding: 5px 10px; /* Adjust for comfortable size */
+  margin: 10px;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded edges */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+    font-weight: bold;
+    cursor: pointer; /* Pointer for interactivity */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+.filter{
+    display: flex;
+    
+    
+}
+.login-btn{
+    background-color: #f05454; /* A nice standout color */
+    color: #ffffff; /* Contrasting text color */
+    height: 20px;
+    width:80px;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded edges */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+    font-weight: bold;
+    cursor: pointer; /* Pointer for interactivity */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+.search {
+    height: 5px;
+    border-color: saddlebrown;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px; 
+
+}

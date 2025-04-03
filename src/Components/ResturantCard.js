@@ -8,7 +8,7 @@ const ResturantCard=(props)=>{
     avgRating,
 cuisines,
 costForTwo,
-deliveryTime}=resData?.data;
+deliveryTime}=resData?.info;
     return (
         <div className="res-card">
             <img className="food" 
