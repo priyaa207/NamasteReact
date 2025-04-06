@@ -27,7 +27,7 @@ padding: 10px;
 list-style: none;
 }
 
-.body{
+.body,.contact,.about,.cart{
     margin-top: 100px;
     padding: 10px;
 }
@@ -134,3 +134,53 @@ list-style: none;
     box-shadow: 0px 4px 6px; 
 
 }
+.res-menu-header{
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    max-height: 800px;
+    padding-left:15px;
+}
+.detail-div{
+    padding:5px 15px;
+    border: 1px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 15px gainsboro;
+}
+h5{
+    line-height: 0.5;
+}
+.header-line {
+    margin: 30px 0px 30px 0px ;
+    border-top: 16px solid rgba(31, 1, 1, 0.07);
+}
+.res-menu{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 15px;
+    border: 1px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 15px gainsboro;
+}
+.food-img{
+    height: 100px;
+}
+.menu-img{
+    height:120px;
+    border-radius: 20px;
+}
+.list-item,.name-div{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    border-bottom: .5px solid darkgray;
+    margin: 20px 0px 20px 0px;
+}
+.link-style{
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+

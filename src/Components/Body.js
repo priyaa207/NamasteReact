@@ -3,6 +3,7 @@ import resList from "../utils/mockdata";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { CANCEL_ICON } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 
 
@@ -60,8 +61,11 @@ const Body = () =>{
         </div>
         
         <div className="restaurant">
-            {listOfFiltered.map((restaurant)=>(<ResturantCard key={restaurant.info.id} resData={restaurant}/>))}
-        
+            {listOfFiltered.map((restaurant)=>(
+                <Link className="link-style" to={"/resturants/"+restaurant.info.id} key={restaurant.info.id}>
+                    <ResturantCard  resData={restaurant}/>
+                </Link>
+            ))}
         </div>
 </div>
     )

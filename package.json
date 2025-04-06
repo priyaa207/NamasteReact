@@ -1,10 +1,9 @@
 {
   "name": "swiggyreact",
   "version": "1.0.0",
-  
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +19,8 @@
   "description": "",
   "dependencies": {
     "parcel": "^2.14.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.30.0"
   }
 }
