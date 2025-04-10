@@ -182,5 +182,9 @@ h5{
     text-decoration: none;
     color: saddlebrown;
 }
-
+.user-card{
+    border: 1px solid saddlebrown;
+    padding: 10px;
+    width: 300px;
+}
 
