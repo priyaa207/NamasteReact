@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { CANCEL_ICON } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 
@@ -24,6 +25,11 @@ const Body = () =>{
         setlistOfFiltered(json?.data?.cards[1].card?.card?.gridElements?.infoWithStyle?.restaurants);
         
     };
+
+    const onlineStatus=useOnlineStatus();
+    if(onlineStatus == false) {
+         return (<h1 className="offline">Looks like you are offline!! Please check your internet connection.</h1>)
+    }
     
     return listOfFiltered.length == 0 ? (<Shimmer/>) :(
         

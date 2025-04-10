@@ -1,3 +1,5 @@
+export const RES_API="https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6691565&lng=77.45375779999999&is-seo-homepage-enabled=true&page_type=restaurant_grid_listing_v2";
+
 export const FOOD_IMG="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const LOGO_IMG="https://i.pinimg.com/originals/01/48/66/0148662247327a7d268ce7d02b8662cf.png";

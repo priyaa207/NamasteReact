@@ -27,14 +27,14 @@ padding: 10px;
 list-style: none;
 }
 
-.body,.contact,.about,.cart{
+.body,.contact,.about,.cart,.offline,.grocery{
     margin-top: 100px;
     padding: 10px;
 }
 .res-card{
     background-color:rgb(255, 243, 230);
     width:200px;
-    padding:5px;
+    padding:15px;
     margin: 5px;
     border-radius: 5px;
     
@@ -173,6 +173,7 @@ h5{
 .list-item,.name-div{
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 .line{
     border-bottom: .5px solid darkgray;
@@ -186,5 +187,8 @@ h5{
     border: 1px solid saddlebrown;
     padding: 10px;
     width: 300px;
+}
+.menu{
+    list-style-type: none;
 }
 
