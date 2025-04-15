@@ -24,11 +24,11 @@ class User extends React.Component {
         const {name,location,avatar_url} = this.state.UserInfo;
         
         return (
-            <div className="user-card">
-                <img height={"150px;"} src={avatar_url}></img>
-                <h2> Name : {name}</h2>
-                <h4>Location : {location}</h4>
-                <h4>Contact : @Priyaa207</h4>
+            <div className=" bg-white p-6 rounded-xl shadow-md text-center">
+                <img className="w-24 h-24 mx-auto rounded-full mb-4" height={"150px;"} src={avatar_url}></img>
+                <h2 className="text-lg font-semibold"> Name : {name}</h2>
+                <h4 className="text-gray-500">Location : {location}</h4>
+                <h4 className="text-blue-500">Contact : @Priyaa207</h4>
             </div>
 
         )

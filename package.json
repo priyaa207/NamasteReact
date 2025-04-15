@@ -18,9 +18,11 @@
   "homepage": "https://github.com/priyaa207/NamasteReact#readme",
   "description": "",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.3",
     "parcel": "^2.14.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.30.0"
+    "react-router-dom": "^6.30.0",
+    "tailwindcss": "^4.1.3"
   }
 }

@@ -2,6 +2,7 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 import {MENU_FOOD_IMG} from "../utils/constants";
 import Shimmer from "./Shimmer";
 import { Link, useParams } from "react-router-dom";
+import RestaurantCategory from "./RestaurantCategory";
 
 const ResturantMenu =()=>{
     
@@ -18,44 +19,33 @@ const ResturantMenu =()=>{
         areaName, 
         slaString} = resInfo?.cards[2]?.card?.card?.info;
 
-    
+   // const {category} = 
+   const categories = resInfo.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    (category) => category?.card?.card?.["@type"]=="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+   );
+   
     const {itemCards} = 
     resInfo.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
     
     return (
-        <div className="res-menu-header">
-            <div className="res-detail">
-                <div className="name-div">
-                    <h3>{name}</h3>
-                    <Link to="/">Back</Link>
+        <div className="mt-24 mx-auto w-3xl pl-4">
+            <div className="border-b-8 border-gray-200">
+                <div className="flex justify-between">
+                    <h3 className="px-4 font-bold text-2xl">{name}</h3>
+                    <Link className="text-gray-600 hover:text-blue-800 font-medium inline-block transition duration-200" to="/"> ↞ Back</Link>
                 </div>
                 
-                <div className="detail-div">
+                <div className=" py-1 px-4 mt-3 border-b-1 border-gray-200 shadow-lg rounded-lg">
                     <p>{avgRating} - {costForTwoMessage}</p>
                     <h5>{cuisines.join(", ")}</h5>
                     <h5>{areaName}</h5>
                     <h5>{slaString}</h5>
                 </div>
             </div>
-            <div className="header-line"></div>
-            <div className="res-menu">
-                <ul>
-                    {itemCards.map (item => <li key={item?.card?.info?.id}>
-                        <div className="list-item">
-                            <div className="menu">
-                                <h4>{item?.card?.info?.name} </h4>
-                                <h5> Rs. {item?.card?.info?.price /100 || itemCards[0].card.info?.defaultPrice /100}</h5>
-                                <p>{item?.card?.info?.description}</p>
-                            </div>
-                            <div className="food-img">
-                                <img className="menu-img" src={MENU_FOOD_IMG + item?.card?.info?.imageId}></img>
-                            </div>
-                        </div>
-                        <div className="line"></div>
-                    </li>)
-                    }
-                </ul>
-            </div>
+            
+             
+            {categories.map((category)=> <RestaurantCategory key={category?.card?.card.title} data={category?.card?.card}/>)}
+            
         </div>
     )
 }
